@@ -1,0 +1,323 @@
+body{
+    padding-top: 52px;
+}
+/* header of index page*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px 60px;
+    background-color: rgb(14, 16, 43);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.644);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+.logo-div{
+    width: 80px;
+    display: flex;
+    justify-content: center;
+}
+.logo{
+    width: 100%;
+    filter: invert(.9);
+}
+.bar-icon{
+    display: none;
+}
+.navigation{
+    display: flex;
+}
+.u-list{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-li{
+    margin-right: 100px;
+}
+.nav-a{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: lightcyan;
+    border-color: rgb(14, 16, 43);
+}
+/* section 1 */
+.section-1{
+    display: flex;
+    width:100%;
+    position: relative;
+}
+.video{
+    width: 100%;
+}
+/* section 2 */
+.section-2{
+    display: block;
+    background-image: url(../images/mestia1.jpg);
+    background-size: cover;
+    padding: 100px 30px 10px 80px;
+    width: 100%;
+}
+.section-2-header-div{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90px;
+}
+.section-2-header{
+    font-family: 'Roboto', sans-serif;
+    /* color: rgb(19, 57, 92);
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.733); */
+    color: white;
+    text-shadow: 4px 4px 3px black, 0 0 25px rgb(20, 95, 255), 0 0 5px darkblue;
+    font-size: 44px;
+    text-transform: capitalize;
+}
+.section-content-div{
+    display: flex;
+    justify-content: space-between;
+}
+.article-div{
+    background-color: rgb(176, 211, 223);
+    border-radius: 10px;
+    box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.904);
+    padding: 20px 35px;
+    margin-right: 50px;
+    margin-bottom: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.article-div:hover{
+    transform: scale(1.06);
+    box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.966);
+    transition-timing-function: ease-out;
+}
+.article-img-div{
+    max-width: 380px;
+    width: 100%;
+    overflow: hidden;
+}
+.article-img{
+    width: 100%;
+    transition: 0.2s all ease-in-out;
+}
+.article-img:hover{
+    transform: scale(1.5);
+}
+.article-content-div{
+    max-width: 380px;
+    width: 100%;
+}
+.article-header{
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    color: rgb(6, 69, 128);
+    font-size: 20px;
+    margin-top: 10px;
+}
+.article-content{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(42, 76, 121);
+    word-spacing: 3px;
+    letter-spacing: .2px;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 25px 0 30px;
+}
+.explore-more-div{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.explore-more{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: rgb(6, 69, 128);
+}
+/* footer */
+.footer-div{
+    background-color: rgb(14, 16, 43);
+    display: flex;
+    justify-content: space-around;
+    padding: 75px 100px;
+}
+.footer-header{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    color: lightcyan;
+    font-size: 15px;
+    margin-bottom: 14px;
+}
+.footer-nav-a{
+    font-family: 'Roboto', sans-serif;
+    text-transform: capitalize;
+    line-height: 18px;
+    font-size: 13.5px;
+    color: rgb(91, 112, 112);
+}
+.footer-nav-icon{
+    font-family: 'Roboto', sans-serif;
+    font-size: 36px;
+    color: rgb(91, 112, 112);
+    padding-right: 25px;
+}
+.footer-icon-li{
+    display: flex;
+    align-items: center;
+}
+.visa-card:hover{
+    animation-timing-function: linear;
+    color: lightseagreen;
+}
+.mastercard:hover{
+    animation-timing-function: linear;
+    color: rgb(255, 153, 0);
+}
+.american-express:hover{
+    animation-timing-function: linear;
+    color: rgb(0, 110, 255);
+}
+.facebook:hover{
+    animation-timing-function: linear;
+    color: blue;
+}
+.insta:hover{
+    animation-timing-function: linear;
+    color: rgb(182, 3, 137);
+}
+.twitter:hover{
+    animation-timing-function: linear;
+    color: rgb(0, 119, 255);
+}
+.pinterest:hover{
+    animation-timing-function: linear;
+    color: red;
+}
+/* destinations page */
+/*section 1*/
+.destinations-section-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color:lightblue;
+}
+.destinations-child-div{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    background-size: cover;
+    background-position: center;
+    width: 70%;
+    height: 400px;
+}
+.tbilisi{
+    background-image: url(../images/tbilisi2.webp);
+    animation: tbilisi 4s 0.5s infinite ;
+}
+@keyframes tbilisi {
+    from {background-image: url(../images/tbilisi2.webp)}
+    to {background-image: url(../images/old-tbilisi.jpg);}
+}
+.mtsketa{
+    background-image: url(../images/mtskheta.jpg);
+    animation: mtsketa 4s 0.5s infinite ;
+}
+@keyframes mtsketa {
+    from {background-image: url(../images/mtskheta.jpg);}
+    to {background-image: url(../images/jvari-mtskheta.jpg);}
+}
+.towers{
+    background-image: url(../images/zugdidi.jpg);
+    animation: towers 8s 0.5s infinite ;
+}
+@keyframes towers {
+    0% {background-image: url(../images/zugdidi.jpg);}
+    30% {background-image: url(../images/ushguli.jpg);  background-position: bottom;}
+    60% {background-image: url(../images/mestia1.jpg);}
+}
+.tovli{
+    background-image: url(../images/bakuriani.jpg);
+    animation: tovli 8s 0.5s infinite ;
+}
+@keyframes tovli {
+    0% {background-image: url(../images/bakuriani.jpg);}
+    40% {background-image: url(../images/gudauri.jpg);}
+    75% {background-image: url(../images/bakuriani1.jpg);}
+}
+.batumi{
+    background-image: url(../images/batumi.jpg);
+    background-position: top;
+    animation: batumi 4s 0.5s infinite ;
+}
+@keyframes batumi {
+    0% {background-image: url(../images/batumi.jpg);}
+    100% {background-image: url(../images/batumi-boulevard.jpg);}    
+}
+.caves{
+    background-image: url(../images/vardzia1.jpg);
+    background-position: top;
+    animation: caves 8s 0.5s infinite ;
+}
+@keyframes caves {
+    0% {background-image: url(../images/vardzia1.jpg);}
+    35% {background-image: url(../images/ufliscixe.jpg);    background-position: top;}
+    75% {background-image: url(../images/david-gareja.jpg); background-position: bottom;}
+}
+.waterfall{
+    background-image: url(../images/dashbashi.jpg);
+    background-position: top;
+    animation: waterfall 4s 0.5s infinite ;
+}
+@keyframes waterfall {
+    0% {background-image: url(../images/dashbashi.jpg);}
+    90% {background-image: url(../images/martvili-canyon1.jpg);}
+}
+.lake{
+    background-image: url(../images/koruldi.jpg);
+    animation: lake 4s 0.5s infinite ;
+}
+@keyframes lake {
+    0% {background-image: url(../images/koruldi.jpg);}
+    90% {background-image: url(../images/bateti-lake.jpg);}
+}
+.kaxeti{
+    background-image: url(../images/Alaverdi.jpg);
+    animation: kaxeti 4s 0.5s infinite ;
+}
+@keyframes kaxeti {
+    0% {background-image: url(../images/Alaverdi.jpg);}
+    90% {background-image: url(../images/signagi.jpg);}
+}
+.canyon{
+    background-image: url(../images/canyon.jpg);
+    animation: canyon 4s 0.5s infinite ;
+}
+@keyframes canyon {
+    0% {background-image: url(../images/canyon.jpg);}
+    90% {background-image: url(../images/martvili-canyon.jpg);}
+}
+.destinations-child{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    color:lightgray;
+    background-color: rgba(93, 80, 165, 0.719);
+    text-transform: capitalize;
+    border-radius: 30%;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    padding: 10px 20px;
+}
+.destinations-child:hover{
+    animation-timing-function: ease-in;
+    zoom: 1.1;
+    background-color: rgba(89, 80, 165, 0.89);
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
