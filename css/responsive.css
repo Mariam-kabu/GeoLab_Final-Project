@@ -37,6 +37,11 @@
     .article-div{
         width: 88%;
     }
+    /* destinations page */
+    /* section 1 */
+    .destinations-child-div{
+        width: 100%;
+    }
 }
 @media (max-width: 425px){
     /* header */
