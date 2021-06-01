@@ -1,5 +1,5 @@
 body{
-    padding-top: 52px;
+    padding-top: 53px;
 }
 /* header of index page*/
 .header{
@@ -7,8 +7,10 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 1px 60px;
-    background-color: rgb(14, 16, 43);
-    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.644);
+    background-image: url(../images/background/EarthForest-LinkedIn-Background-ID-42231-Cover-Abyss.jpg);
+    background-position: top;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 100%;
     position: fixed;
     top: 0;
@@ -25,7 +27,10 @@ body{
     filter: invert(.9);
 }
 .bar-icon{
+    font-family: 'Poppins', sans-serif;
     display: none;
+    color: lightcyan;
+    font-size: 18px;
 }
 .navigation{
     display: flex;
@@ -38,11 +43,17 @@ body{
     margin-right: 100px;
 }
 .nav-a{
-    font-family: 'Roboto', sans-serif;
-    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
     text-transform: uppercase;
     color: lightcyan;
     border-color: rgb(14, 16, 43);
+}
+.active{
+    font-size: 19px;
+    color: rgb(2, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
 }
 /* section 1 */
 .section-1{
@@ -55,10 +66,12 @@ body{
 }
 /* section 2 */
 .section-2{
-    display: block;
-    background-image: url(../images/mestia1.jpg);
+    background-image: url(../images/background/pine-tree-background-img.jpg);
     background-size: cover;
-    padding: 100px 30px 10px 80px;
+    background-position: top;
+    display: flex;
+    flex-direction: column;
+    padding: 100px 80px 10px 80px;
     width: 100%;
 }
 .section-2-header-div{
@@ -67,11 +80,9 @@ body{
     margin-bottom: 90px;
 }
 .section-2-header{
-    font-family: 'Roboto', sans-serif;
-    /* color: rgb(19, 57, 92);
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.733); */
+    font-family: 'Poppins', sans-serif;
     color: white;
-    text-shadow: 4px 4px 3px black, 0 0 25px rgb(20, 95, 255), 0 0 5px darkblue;
+    text-shadow: 4px 4px 3px black, 0 0 25px rgb(81, 230, 180), 0 0 5px rgb(0, 99, 21);
     font-size: 44px;
     text-transform: capitalize;
 }
@@ -80,13 +91,12 @@ body{
     justify-content: space-between;
 }
 .article-div{
-    background-color: rgb(176, 211, 223);
+    background-color: rgb(176, 223, 219);
     border-radius: 10px;
     box-shadow: 10px 20px 20px rgba(0, 0, 0, 0.904);
     padding: 20px 35px;
-    margin-right: 50px;
     margin-bottom: 70px;
-    width: 100%;
+    width: 30%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -98,34 +108,33 @@ body{
     transition-timing-function: ease-out;
 }
 .article-img-div{
-    max-width: 380px;
     width: 100%;
     overflow: hidden;
 }
 .article-img{
     width: 100%;
+    border-radius: 8px;
     transition: 0.2s all ease-in-out;
 }
 .article-img:hover{
     transform: scale(1.5);
 }
 .article-content-div{
-    max-width: 380px;
     width: 100%;
 }
 .article-header{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
     color: rgb(6, 69, 128);
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 10px;
 }
 .article-content{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: rgb(42, 76, 121);
     word-spacing: 3px;
     letter-spacing: .2px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 22px;
     padding: 25px 0 30px;
 }
@@ -135,35 +144,45 @@ body{
     justify-content: flex-end;
 }
 .explore-more{
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
     color: rgb(6, 69, 128);
+    border: rgb(0, 217, 255);
+    padding: 10px 20px;
+    border-radius: 50px;
+}
+.explore-more:hover{
+    box-shadow: 1px 1px 5px black, 0 0 10px rgb(0, 247, 255), 0 0 5px rgb(0, 88, 139);
 }
 /* footer */
 .footer-div{
-    background-color: rgb(14, 16, 43);
+    box-shadow: 20px 10px 20px rgb(12, 0, 32);
+    background-image: url(../images/background/EarthForest-LinkedIn-Background-ID-42231-Cover-Abyss.jpg);
+    background-position: bottom;
+    background-size: cover;
     display: flex;
     justify-content: space-around;
     padding: 75px 100px;
 }
 .footer-header{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     color: lightcyan;
     font-size: 15px;
     margin-bottom: 14px;
 }
 .footer-nav-a{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
     line-height: 18px;
     font-size: 13.5px;
-    color: rgb(91, 112, 112);
+    color: rgb(2, 255, 255);
 }
 .footer-nav-icon{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 36px;
-    color: rgb(91, 112, 112);
+    color: rgba(2, 255, 255, 0.712);
     padding-right: 25px;
 }
 .footer-icon-li{
@@ -206,7 +225,8 @@ body{
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color:lightblue;
+    background-image: url(../images/background/pine-tree-background-img.jpg);
+    background-size:cover;
 }
 .destinations-child-div{
     display: flex;
@@ -215,27 +235,28 @@ body{
     background-size: cover;
     background-position: center;
     width: 70%;
-    height: 400px;
+    height: 450px;
+    /* box-shadow: 0px 8px 30px 0 rgba(0, 0, 0, 0.37), 0 6px 10px 0 rgba(0, 0, 0, 0.19); */
 }
 .tbilisi{
     background-image: url(../images/tbilisi2.webp);
-    animation: tbilisi 4s 0.5s infinite ;
+    animation: tbilisi 6s 2s infinite ;
 }
 @keyframes tbilisi {
-    from {background-image: url(../images/tbilisi2.webp)}
-    to {background-image: url(../images/old-tbilisi.jpg);}
+    0% {background-image: url(../images/tbilisi2.webp)}
+    50% {background-image: url(../images/old-tbilisi.jpg);}
 }
 .mtsketa{
     background-image: url(../images/mtskheta.jpg);
-    animation: mtsketa 4s 0.5s infinite ;
+    animation: mtsketa 6s 2s infinite ;
 }
 @keyframes mtsketa {
-    from {background-image: url(../images/mtskheta.jpg);}
-    to {background-image: url(../images/jvari-mtskheta.jpg);}
+    0% {background-image: url(../images/mtskheta.jpg);}
+    50% {background-image: url(../images/jvari-mtskheta.jpg);}
 }
 .towers{
     background-image: url(../images/zugdidi.jpg);
-    animation: towers 8s 0.5s infinite ;
+    animation: towers 10s 2s infinite ;
 }
 @keyframes towers {
     0% {background-image: url(../images/zugdidi.jpg);}
@@ -244,7 +265,7 @@ body{
 }
 .tovli{
     background-image: url(../images/bakuriani.jpg);
-    animation: tovli 8s 0.5s infinite ;
+    animation: tovli 10s 2s infinite ;
 }
 @keyframes tovli {
     0% {background-image: url(../images/bakuriani.jpg);}
@@ -254,7 +275,7 @@ body{
 .batumi{
     background-image: url(../images/batumi.jpg);
     background-position: top;
-    animation: batumi 4s 0.5s infinite ;
+    animation: batumi 6s 2s infinite ;
 }
 @keyframes batumi {
     0% {background-image: url(../images/batumi.jpg);}
@@ -263,7 +284,7 @@ body{
 .caves{
     background-image: url(../images/vardzia1.jpg);
     background-position: top;
-    animation: caves 8s 0.5s infinite ;
+    animation: caves 10s 2s infinite ;
 }
 @keyframes caves {
     0% {background-image: url(../images/vardzia1.jpg);}
@@ -273,43 +294,43 @@ body{
 .waterfall{
     background-image: url(../images/dashbashi.jpg);
     background-position: top;
-    animation: waterfall 4s 0.5s infinite ;
+    animation: waterfall 6s 2s infinite ;
 }
 @keyframes waterfall {
     0% {background-image: url(../images/dashbashi.jpg);}
-    90% {background-image: url(../images/martvili-canyon1.jpg);}
+    50% {background-image: url(../images/martvili-canyon1.jpg);}
 }
 .lake{
     background-image: url(../images/koruldi.jpg);
-    animation: lake 4s 0.5s infinite ;
+    animation: lake 6s 2s infinite ;
 }
 @keyframes lake {
     0% {background-image: url(../images/koruldi.jpg);}
-    90% {background-image: url(../images/bateti-lake.jpg);}
+    50% {background-image: url(../images/bateti-lake.jpg);}
 }
 .kaxeti{
     background-image: url(../images/Alaverdi.jpg);
-    animation: kaxeti 4s 0.5s infinite ;
+    animation: kaxeti 6s 2s infinite ;
 }
 @keyframes kaxeti {
     0% {background-image: url(../images/Alaverdi.jpg);}
-    90% {background-image: url(../images/signagi.jpg);}
+    50% {background-image: url(../images/signagi.jpg);}
 }
 .canyon{
     background-image: url(../images/canyon.jpg);
-    animation: canyon 4s 0.5s infinite ;
+    animation: canyon 6s 2s infinite ;
 }
 @keyframes canyon {
     0% {background-image: url(../images/canyon.jpg);}
-    90% {background-image: url(../images/martvili-canyon.jpg);}
+    50% {background-image: url(../images/martvili-canyon.jpg);}
 }
 .destinations-child{
-    font-family: 'Roboto', sans-serif;
-    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 29px;
     color:lightgray;
-    background-color: rgba(93, 80, 165, 0.719);
+    background-color: rgba(51, 139, 88, 0.719);
     text-transform: capitalize;
-    border-radius: 30%;
+    border-radius: 50px;
     margin-bottom: 50px;
     margin-right: 50px;
     padding: 10px 20px;
@@ -317,7 +338,7 @@ body{
 .destinations-child:hover{
     animation-timing-function: ease-in;
     zoom: 1.1;
-    background-color: rgba(89, 80, 165, 0.89);
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    background-color: rgba(55, 163, 87, 0.89);
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(0, 255, 136), 0 0 5px rgb(0, 139, 7);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
