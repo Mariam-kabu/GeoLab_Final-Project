@@ -1,5 +1,5 @@
 body{
-    padding-top: 53px;
+    padding-top: 52px;
 }
 /* header of index page*/
 .header{
@@ -157,7 +157,6 @@ body{
 }
 /* footer */
 .footer-div{
-    box-shadow: 20px 10px 20px rgb(12, 0, 32);
     background-image: url(../images/background/EarthForest-LinkedIn-Background-ID-42231-Cover-Abyss.jpg);
     background-position: bottom;
     background-size: cover;
