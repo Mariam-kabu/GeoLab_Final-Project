@@ -1,7 +1,7 @@
 body{
     padding-top: 52px;
 }
-/* header of index page*/
+/* header*/
 .header{
     display: flex;
     justify-content: space-between;
@@ -26,12 +26,6 @@ body{
     width: 100%;
     filter: invert(.9);
 }
-.bar-icon{
-    font-family: 'Poppins', sans-serif;
-    display: none;
-    color: lightcyan;
-    font-size: 18px;
-}
 .navigation{
     display: flex;
 }
@@ -40,7 +34,7 @@ body{
     justify-content: space-between;
 }
 .nav-li{
-    margin-right: 100px;
+    margin-right: 60px;
 }
 .nav-a{
     font-family: 'Poppins', sans-serif;
@@ -49,11 +43,40 @@ body{
     color: lightcyan;
     border-color: rgb(14, 16, 43);
 }
+.nav-a:hover{
+    color: rgb(2, 255, 255);
+}
 .active{
     font-size: 19px;
     color: rgb(2, 255, 255);
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
+    animation-name: glow;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes glow{
+    from{text-shadow:0px 0px 5px #fff,0px 0px 5px rgb(134, 255, 255);}
+    to{text-shadow:0px 0px 20px #fff,0px 0px 20px rgb(133, 255, 255);}
+  }
+.bar-icon{
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    font-family: 'Poppins', sans-serif;
+    display: none;
+    color: lightcyan;
+    font-size: 18px;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+@keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00e613, 0 0 40px #00e686, 0 0 50px #6fe600, 0 0 60px #00e68e, 0 0 70px #00e600;
+    }
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #4dff97, 0 0 40px #4dff9d, 0 0 50px #62ff4d, 0 0 60px #4dff56, 0 0 70px #4dffa6, 0 0 80px #4dff65;
+    }
 }
 /* section 1 */
 .section-1{
@@ -138,6 +161,9 @@ body{
     line-height: 22px;
     padding: 25px 0 30px;
 }
+.article-content::first-letter{
+    font-size: x-large;
+}
 .explore-more-div{
     width: 100%;
     display: flex;
@@ -148,12 +174,13 @@ body{
     text-transform: uppercase;
     font-size: 13px;
     color: rgb(6, 69, 128);
-    border: rgb(0, 217, 255);
     padding: 10px 20px;
+    border: medium double rgb(1, 134, 179);
     border-radius: 50px;
 }
 .explore-more:hover{
-    box-shadow: 1px 1px 5px black, 0 0 10px rgb(0, 247, 255), 0 0 5px rgb(0, 88, 139);
+    border-color: deepskyblue;
+    color: deepskyblue;
 }
 /* footer */
 .footer-div{
@@ -216,6 +243,7 @@ body{
     animation-timing-function: linear;
     color: red;
 }
+
 /* destinations page */
 /*section 1*/
 .destinations-section-1{
@@ -224,8 +252,7 @@ body{
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-image: url(../images/background/pine-tree-background-img.jpg);
-    background-size:cover;
+    background-color: rgb(159, 243, 222);
 }
 .destinations-child-div{
     display: flex;
@@ -235,7 +262,6 @@ body{
     background-position: center;
     width: 70%;
     height: 450px;
-    /* box-shadow: 0px 8px 30px 0 rgba(0, 0, 0, 0.37), 0 6px 10px 0 rgba(0, 0, 0, 0.19); */
 }
 .tbilisi{
     background-image: url(../images/tbilisi2.webp);
@@ -340,4 +366,120 @@ body{
     background-color: rgba(55, 163, 87, 0.89);
     text-shadow: 1px 1px 2px black, 0 0 25px rgb(0, 255, 136), 0 0 5px rgb(0, 139, 7);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* about us page */
+/* section 1 */
+
+.info-section-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    width: 100%;
+    height: auto;
+    background-image: url(../images/racha-lechkhumi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+.info-section-1-article{
+    width: 40%;
+    padding: 20px;
+    background: #ece5da8f;
+    color: #202020;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px double #ece5dabd;
+    box-shadow: 10px 20px 20px rgba(24, 23, 23, 0.651);
+}
+.info-section-1-article:hover{
+    background: #ece5dada;
+    box-shadow: 10px 15px 15px rgba(24, 23, 23, 0.781);
+    zoom: 1.1;
+}
+.info-section-1-article-header{
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #f5f5de;
+    text-shadow: 0 13.35px 8.896px #998b74, 0 -2px 1px #aaaaaa;
+    margin-bottom: 14px;
+}
+.info-section-1-article-txt{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 25px; 
+    text-align: center;
+    color: #413c35;
+}
+/* section 2 */
+.info-section-2{
+    padding:70px 40px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.info-section-2-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.info-section-2-div:first-child{
+    margin-right: 40px;
+}
+.info-section-2-div:nth-child(2){
+    margin-right: 40px;
+}
+.info-section-2-div:nth-child(3){
+    margin-right: 40px;
+}
+.info-section-2-div:nth-child(4){
+    margin-right: 40px;
+}
+.info-section-2-icon{
+    font-size: 35px;
+    color:rgb(3, 78, 34);
+}
+.info-section-2-icon:hover{
+    color: rgb(4, 197, 4);
+}
+.info-section-2-title{
+    font-family: 'Poppins', sans-serif;
+    line-height: 28px; 
+    font-size: 20px;
+    color: rgb(4, 197, 4);
+}
+.info-section-2-content{
+    font-family: 'Poppins', sans-serif;
+    line-height: 28px; 
+    font-size: 18px;
+    color: rgb(4, 197, 4);
+}
+.pseudo-lari::after{
+    content: "₾";
+    color: rgb(4, 197, 4);
+    font-size: 18px;
+    margin-left: 10px;
+}
+.pseudo-area::after{
+    content: "KM²";
+    color: rgb(4, 197, 4);
+    font-size: 18px;
+    margin-left: 10px;
+}
+/* section 3 */
+.info-section-3{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.info-section-3-img{
+    width: 100%;
 }

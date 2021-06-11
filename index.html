@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
-    <link rel="icon" type="image" href="images/georgia.svg">
+    <link rel="icon" type="image" href="images/pngwing.com(1).png">
     <script src="https://kit.fontawesome.com/1a50acf9c6.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -19,18 +19,18 @@
             <div class="logo-div">
                 <a href="index.html"><img class="logo" src="images/georgia.svg" alt="georgia"></a>
             </div>
-            <div class="bar-icon">
-				<i class="fas fa-bars"></i>
-			</div>
-            <nav class="navigation">
+            <nav class="navigation" id="navbarLinks">
                 <ul class="u-list">
                     <li class="nav-li"><a class="active" href="index.html">home</a></li>
                     <li class="nav-li"><a class="nav-a" href="destinations.html">destinations</a></li>
                     <li class="nav-li"><a class="nav-a" href="tours.html">tours & services</a></li>
                     <li class="nav-li"><a class="nav-a" href="info.html">about us</a></li>
-                    <li class="nav-li"><a class="nav-a" href="contact.html">contact</a></li>
+                    <li><a class="nav-a" href="contact.html">contact</a></li>
                 </ul>
             </nav>
+            <div class="bar-icon" id="toggleButton">
+				<i class="fas fa-bars"></i>
+			</div>
         </div>
     </header>
     <section>
@@ -47,7 +47,7 @@
                 <div class="article-div">
                     <div class="article-img-div"><img class="article-img" src="images/tbilisi.webp" alt="tbilisi"></div>
                     <div class="article-content-div">
-                        <h4 class="article-header">welcome to georgia | 10 days</h4>
+                        <h4 class="article-header">welcome to georgia</h4>                       
                         <p class="article-content">After exploring Tbilis our tour is continued to Kakheti, Georgia’s wine-growing countryside known for beautiful churches and monasteries. Via Mtskheta, the ancient capital of Georgia we journey to the heart of the Caucasus Mountains and...</p>
                     </div>
                     <div class="explore-more-div">
@@ -66,8 +66,8 @@
                 </div>
                 <div class="article-div">
                     <div class="article-img-div"><img class="article-img" src="images/gudauri.jpg" alt="gudauri"></div>
-                    <div class="article-content-div">
-                        <h4 class="article-header">winter fairyland | 8 days</h4>
+                    <div class="article-content-div">                
+                        <h4 class="article-header pseudo">winter fairyland in 8 days</h4>                        
                         <p class="article-content">During this tour you will be visiting Gudauri which is a ski resort located on the south-facing plateau of The Greater Caucasus Mountain Range in Georgia. The resort is situated in the Stepantsminda District, along the Georgian Military Highway near the Jvari Pass, at an elevation of 2,200 meters (7,200 ft.) above sea level...</p>
                     </div>
                     <div class="explore-more-div">
@@ -115,5 +115,6 @@
             </div>
         </div>
     </footer>
+    <script src="javascript/script.js"></script>
 </body>
 </html>

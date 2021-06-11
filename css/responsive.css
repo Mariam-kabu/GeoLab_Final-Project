@@ -1,12 +1,3 @@
-@media (max-width: 1220px){
-    /* header */
-    .navigation{
-        display: none;
-    }
-    .bar-icon{
-        display: block;
-    }
-}
 @media (max-width: 1024px){
     /* index page*/
     /* section 2 */
@@ -27,6 +18,49 @@
         margin-bottom: 40px;
     }
 }
+@media (max-width: 980px){
+    /* header */
+    .navigation{
+        display: none;
+        width: 100%;
+        justify-content: center;
+    }
+    .bar-icon{
+        display: block;
+    }
+    .header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .u-list{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15px;
+        margin-bottom: 25px;
+    }
+    .nav-li{
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+    .navigation.active{
+        display: block;
+    }
+    /* info page */
+    /* section 1 */
+    .info-section-1-article{
+        width: 70%;
+    }
+}
+@media (max-width: 794px){
+    /* iinfo page */
+    /* section 2 */
+    .info-section-2{
+        padding:70px 0 30px 40px;
+    }
+    .info-section-2-div:last-child{
+        margin-right: 40px;
+    }
+} 
 @media (max-width: 768px){
     /* index page */
     /*section-2 */
@@ -37,13 +71,20 @@
     .article-div{
         width: 88%;
     }
+
     /* destinations page */
     /* section 1 */
     .destinations-child-div{
         width: 100%;
     }
+
+    /* info page */
+    /* section 1 */
+    .info-section-1-article{
+        width: 90%;
+    }
 }
-@media (max-width: 425px){
+@media (max-width: 450px){
     /* header */
     .header{
         padding: 1px 20px;
@@ -59,5 +100,35 @@
     }
     .section-2-header{
         font-size: 30px;
+    }
+
+    /* destination page */
+    /* section 1 */
+    .destinations-child{
+        font-size: 20px;
+    }
+
+    /* info page */
+    /* section 1 */
+    .info-section-1-article{
+        width: 92%;
+    }
+    .info-section-1-article-header{
+        font-size: 28px;
+    }
+    .info-section-1-article-txt{
+        font-size: 16px;
+    }
+}
+@media (max-width: 366px){
+    /* info page */
+    /* section 1 */
+    .info-section-1-article-header{
+        font-size: 22px;
+    }
+    /* section 2 */
+    .info-section-2{
+        flex-direction: column;
+        align-items: center;
     }
 }
