@@ -35,12 +35,12 @@
     .u-list{
         flex-direction: column;
         align-items: center;
-        margin-top: 15px;
-        margin-bottom: 25px;
+        margin-top: 25px;
+        margin-bottom: 45px;
     }
     .nav-li{
         margin-right: 0;
-        margin-bottom: 12px;
+        margin-bottom: 30px;
     }
     .navigation.active{
         display: block;
@@ -49,6 +49,15 @@
     /* section 1 */
     .info-section-1-article{
         width: 70%;
+    }
+    /* section 3 */
+    .info-section-3{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .kutxeebi-parent, .info-section-3-img-div{
+        width: 100%;
     }
 }
 @media (max-width: 794px){
@@ -80,6 +89,9 @@
 
     /* info page */
     /* section 1 */
+    .info-section-1{
+        padding: 50px 0;
+    }
     .info-section-1-article{
         width: 90%;
     }
@@ -89,7 +101,6 @@
     .header{
         padding: 1px 20px;
     } 
-
     /* index page */
     /* section-2 */
     .section-2{
@@ -110,21 +121,32 @@
 
     /* info page */
     /* section 1 */
-    .info-section-1-article{
-        width: 92%;
-    }
     .info-section-1-article-header{
-        font-size: 28px;
+        font-size: 22px;
     }
     .info-section-1-article-txt{
-        font-size: 16px;
+        font-size: 14px;
+    }
+    /* section 2 */
+    .info-section-2-icon{
+        font-size: 28px;
+    }
+    .info-section-2-title{
+        font-size: 17px;
+    }
+    .info-section-2-content{
+        font-size: 15px;
+    }
+    /* section 3 */
+    .kutxeebi-a{
+        font-size: 12px;
     }
 }
 @media (max-width: 366px){
     /* info page */
     /* section 1 */
     .info-section-1-article-header{
-        font-size: 22px;
+        font-size: 20px;
     }
     /* section 2 */
     .info-section-2{
