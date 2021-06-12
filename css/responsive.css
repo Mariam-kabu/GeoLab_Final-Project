@@ -1,3 +1,18 @@
+@media (max-width: 1300px){
+    /* info page */
+    /* section 4 */
+    .languages-div{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .language:nth-child(1){
+        margin-right: 0px;
+    }
+    .language:nth-child(2){
+        margin-right: 0px;
+    }
+}
 @media (max-width: 1024px){
     /* index page*/
     /* section 2 */
@@ -95,6 +110,10 @@
     .info-section-1-article{
         width: 90%;
     }
+    /* section 4 */
+    .our-team{
+        width: 50%;
+    }
 }
 @media (max-width: 450px){
     /* header */
@@ -140,6 +159,10 @@
     /* section 3 */
     .kutxeebi-a{
         font-size: 12px;
+    }
+    /* section 4 */
+    .our-team{
+        width: 100%;
     }
 }
 @media (max-width: 366px){
