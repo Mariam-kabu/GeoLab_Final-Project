@@ -559,7 +559,6 @@ body{
     background-color: rgb(243, 252, 252);
 }
 .our-team{
-    /* position: relative; */
     margin-bottom: 60px;
     width: 30%;
     display: flex;
@@ -580,7 +579,6 @@ body{
     transform: scale(1.05);
 }
 .our-team-content{
-    /* position: absolute; */
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -592,12 +590,7 @@ body{
     bottom: 0;
     left: 10%;
     box-shadow: 0px 0px 20px 1px rgba(28, 71, 46, 0.479);
-
-    /* display: none; */
 }
-/* .our-team-content.use{
-    display: block;
-} */
 .our-team-content:hover{
     transform: scale(1.09);
     border: 2px solid rgb(11, 150, 64);
@@ -636,36 +629,119 @@ body{
 
 /* contact page */
 /* message icon section */
-.message-div{
-    font-size: 60px;
-    color: rgb(6, 112, 6);
-    position: fixed;
-    bottom: 100px;
-    right: 50px;
-    z-index: 90;
-    animation: message 1s 0s 1;
-    transform: rotatey(180deg);
-}
-.message-div:hover{
-    transform: scale(1.1) rotatey(180deg);
-}
-@keyframes message{
-	0% {right: -100%;}
-	100% {right: 50px;}
+.contact-pg-body{
+    background-image: url(../images/racha-lechkhumi.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10%;
 }
 .arrow{
     font-size: 60px;
-    color: green;
+    color: #f5f5de;
     position: fixed;
-    top: 50px;
+    top: 30px;
     left: 50px;
     z-index: 90;
     animation: arrow 1s 0s 1;
 }
 .arrow:hover{
-    transform: scale(1.1);
+    transform: scale(1.13);
 }
 @keyframes arrow{
 	0% {left: -100%;}
 	100% {left: 50px;}
+}
+.contact-us-div{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    backdrop-filter: blur(15px);
+    padding: 30px 35px;
+    border: thin  outset rgba(85, 80, 80, 0.651);
+    border-radius: 22px;
+    margin-top: 90px;
+    margin-bottom: 120px;
+    box-shadow: 0px 2px 20px 10px rgba(11, 29, 18, 0.89);
+}
+.contact-us-header-div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-us-header{
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
+    color: #f5f5de;
+    text-shadow: 0 13.35px 8.896px #7a766f, 0 -2px 1px #aaaaaa;
+    margin-bottom: 20px;
+}
+.contact-us-par{
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    font-size: 16px;
+    font-weight: normal;
+    color: #f5f5de;
+    margin-bottom: 20px;
+}
+.form-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.label{
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-weight: normal;
+    color: #f5f5de;
+    margin-bottom: 10px;
+}
+.info-input{
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+    padding: 7px 20px;
+    margin-bottom: 15px;
+    color: rgb(85, 80, 80);
+}
+.message-input{
+    font-family: 'Poppins', sans-serif;
+    border-radius: 15px;
+    resize: none;
+    padding: 7px 20px;
+    color: rgb(85, 80, 80);
+}
+.message-input:focus,
+.info-input:focus{
+    outline: none;
+}
+.submit-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+.submit{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    height: 35px;
+    border-radius: 15px;
+    background-color: #f5f5de;
+    color: rgb(85, 80, 80);
+}
+.submit:hover{
+    color: #f5f5de;
+    background-color: rgb(86, 102, 86);
 }

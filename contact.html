@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Georgian travel agency about georgia">
+    <meta name="keywords" content="travel in georgia, travel, georgia, Contact travelguide, information, destinations, regions,travelguide guides">
+    <meta name="author" content="Mariam Kabulovi">
+    <meta name="google" content="notranslate" />
+    <!-- social meta tags -->
+    <meta property="og:url"                content="https://mariam-kabu.github.io/GeoLab_Final-Project/contact.html" />
+    <meta property="og:type"               content="website" />
+    <meta property="og:title"              content="Georgia | Contact Us" />
+    <meta property="og:description"        content="Georgia travel agency - contact page" />
+    <meta property="og:image"              content="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201909/contact-details-3381225_1280.jpeg?524JGkJvIBQ1imnKfpn2djsEHFX06JK7&size=770:433" />
     <title>Georgia | Contact</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    
@@ -18,10 +28,31 @@
         <div class="arrow-div">
             <a class="arrow" href="index.html"><i class="fas fa-arrow-circle-left"></i></a>
         </div>
-        <div class="message-div">
-            <i class="fas fa-comment-dots"></i>
+    </section>
+    <section>
+        <div class="contact-us-div">
+            <div class="contact-us-header-div">
+                <h3 class="contact-us-header">contact us</h3>
+                <p class="contact-us-par">please send us your message and we will get back to you at the earliest</p>
+            </div>
+            <form action="#" class="form-div">
+                <label class="label" for="fname"><i class="fas fa-user"></i> your full name</label>
+                <input class="info-input" type="text" id="fname" required>
+                <label class="label" for="femail"><i class="fas fa-envelope"></i> your email</label>
+                <input class="info-input" type="email" id="femail" required>
+                <label class="label" for="fcall"><i class="fas fa-phone"></i> your phone number</label>
+                <input class="info-input" type="text" id="fcall" required>
+                <label class="label" for="fsubject"><i class="fas fa-info"></i> Subject</label>
+                <input class="info-input" type="text" id="fsubject" required>
+                <label class="label" for="text"><i class="fas fa-info"></i> message</label>
+                <textarea class="message-input" name="text" id="form-description" cols="30" rows="5"></textarea>
+                <div class="submit-div">                
+                    <button type="submit" class="submit">Send<i class="fas fa-paper-plane"></i></button>
+                </div>
+            </form>
         </div>
     </section>
+
     <script src="javascript/script.js"></script>
 </body>
 </html>
