@@ -114,6 +114,9 @@
     .our-team{
         width: 50%;
     }
+    .our-team-content{
+        width: 50%;
+    }
 }
 @media (max-width: 450px){
     /* header */
@@ -163,6 +166,9 @@
     /* section 4 */
     .our-team{
         width: 100%;
+    }
+    .our-team-content{
+        width: 40%;
     }
 }
 @media (max-width: 366px){

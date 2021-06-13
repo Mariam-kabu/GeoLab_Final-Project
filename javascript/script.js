@@ -6,9 +6,9 @@ toggleButton.addEventListener('click', function(){
 })
 
 
-let nika = document.getElementById('nika');
-let nikaInfo = document.getElementById('nikaInfo');
+// let nika = document.getElementById('nika');
+// let nikaInfo = document.getElementById('nikaInfo');
 
-nika.addEventListener('click', function(){
-  nikaInfo.classList.toggle('use');
-})
+// nika.addEventListener('click', function(){
+//   nikaInfo.classList.toggle('use');
+// })
