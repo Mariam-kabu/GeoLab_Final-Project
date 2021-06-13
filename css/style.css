@@ -637,7 +637,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 10%;
 }
 .arrow{
     font-size: 60px;
@@ -666,7 +665,7 @@ body{
     border: thin  outset rgba(85, 80, 80, 0.651);
     border-radius: 22px;
     margin-top: 90px;
-    margin-bottom: 120px;
+    margin-bottom: 180px;
     box-shadow: 0px 2px 20px 10px rgba(11, 29, 18, 0.89);
 }
 .contact-us-header-div{
