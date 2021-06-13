@@ -637,6 +637,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 10%;
 }
 .arrow{
     font-size: 60px;
