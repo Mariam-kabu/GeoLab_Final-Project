@@ -236,6 +236,23 @@ body {
   margin-bottom: 30px;
 }
 /* slider */
+.slider-header-div{
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slider-header{
+  width: 90%;
+  font-family: "Poppins", sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #1e3607;
+  text-shadow: 4px 4px 3px rgba(0, 14, 0, 0.603), 0 0 25px rgb(81, 230, 180),
+    0 0 5px rgb(0, 99, 21);
+  text-align: center;
+}
 .slider {
   display: flex;
 }
