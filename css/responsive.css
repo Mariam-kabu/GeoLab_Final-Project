@@ -95,6 +95,14 @@
     .article-div{
         width: 88%;
     }
+    /* section 3 */
+    .youtube-video-div {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .youtube-video{
+        width: 100%;
+    }
 
     /* destinations page */
     /* section 1 */
@@ -123,6 +131,9 @@
     }
 }
 @media (max-width: 450px){
+    body {
+        padding-top: 53px;
+      }
     /* header */
     .header{
         padding: 1px 20px;
@@ -136,7 +147,11 @@
         margin-bottom: 55px;
     }
     .section-2-header{
-        font-size: 30px;
+        font-size: 23px;
+    }
+    /* section 3 */
+    .section-3-header{
+        font-size: 23px;
     }
 
     /* destination page */
