@@ -95,6 +95,12 @@
     .article-div{
         width: 88%;
     }
+    /* slider */
+    .text{
+        padding: 4px 12px;
+        bottom: 10px;
+        width: auto;
+    }
     /* section 3 */
     .youtube-video-div {
         flex-direction: column;
@@ -132,7 +138,7 @@
 }
 @media (max-width: 450px){
     body {
-        padding-top: 53px;
+        padding-top: 50px;
       }
     /* header */
     .header{
@@ -157,7 +163,11 @@
     .slider-header{
         font-size: 23px;
     }
-
+    .prev, .next, .text{font-size: 14px}
+    .dot{
+        height: 4px;
+        width: 4px;
+    }
     /* destination page */
     /* section 1 */
     .destinations-child{

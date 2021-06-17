@@ -6,33 +6,29 @@ toggleButton.addEventListener('click', function(){
 })
 
 
-$(function(){
-  $('.multiple-items').slick({
- infinite: true,
- // რამდენი სურათი გამოჩნდეს
- slidesToShow: 3,
- // სლაიდის დროს რამდენი ელემნტით გადავიდეს 
- slidesToScroll: 1,
- // რომ გამოჩნდეს ღილაკები
- arrows: true,
- // რომ გამოჩნდეს ბურთულები
- dots: false,
- // responsiv-ის კოდი
- responsive: [
-     {
-       breakpoint: 768,
-       settings: {
-         slidesToShow: 2,
-         slidesToScroll: 1
-       }
-     },
-     {
-       breakpoint: 480,
-       settings: {
-         slidesToShow: 1,
-         slidesToScroll: 1
-       }
-     }
-   ]
- });    
-});
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
