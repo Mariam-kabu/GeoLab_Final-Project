@@ -59,6 +59,7 @@
     }
     .navigation.active{
         display: block;
+        background-color: inherit;
     }
     /* info page */
     /* section 1 */
