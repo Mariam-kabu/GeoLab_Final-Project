@@ -253,9 +253,9 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 36px;
   text-transform: uppercase;
-  color: #1e3607;
-  text-shadow: 4px 4px 3px rgba(0, 14, 0, 0.438), 0 0 25px rgb(81, 230, 180),
-    0 0 5px rgb(0, 99, 21);
+  color: #073136;
+  text-shadow: 4px 4px 3px rgba(0, 8, 14, 0.438), 0 0 25px rgb(81, 230, 180),
+    0 0 5px rgb(26, 0, 99);
   text-align: center;
 }
 .mySlides {display: none}
